@@ -1,0 +1,21 @@
+// Import variables before use
+@import '../../scss/variables';
+@font-face {
+font-family: 'DisplayOTF';
+src:
+    url('/DisplayOTF.otf');
+}
+
+h3 {
+    font-family: 'DisplayOTF';
+    font-size: 4.5em;
+    color: orange;
+}
+
+.jumbotron {
+    background: black;
+}
+
+body {
+    background: black
+}
