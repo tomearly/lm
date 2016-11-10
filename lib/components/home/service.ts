@@ -42,6 +42,8 @@ export default class DataTypeService {
             'Wolverhampton',
             'Stone',
             'Tamworth',
+            'Trump Tower',
+            'The Whitehouse',
             'Tile Hill',
             'Tring',
             'Watford Junction',
@@ -49,24 +51,20 @@ export default class DataTypeService {
         ];
 
         var randomIndex = Math.round(Math.random() * destinations.length - 1) === -1 ? 1 : Math.round(Math.random() * destinations.length - 1);
-        console.log(randomIndex);
         return destinations[randomIndex];
     }
 
     getRandomMainExcuse() {
 
         var timeSpan = ['days', 'hours', 'months', 'years', 'decades'];
-        var timeSpanString = timeSpan[Math.round(Math.random() * 1];
+        var timeSpanString = timeSpan[Math.round(Math.random() * 4)];
 
-        var destinations = [
+        var mainExcuses = [
             'is delayed by ' + Math.round(Math.random() * 60) + ' ' + timeSpanString,
-            'has been destroyed',
             'has been cancelled'
         ];
 
-        var randomIndex = Math.round(Math.random() * destinations.length - 1) === -1 ? 1 : Math.round(Math.random() * destinations.length - 1);
-        console.log(randomIndex);
-        return destinations[Math.round(Math.random() * 2)];
+        return mainExcuses[Math.round(Math.random() * 1)];
     }
 
     getRandomFakeExcuse() {
@@ -74,54 +72,10 @@ export default class DataTypeService {
             'due to a large slurry of pig dung',
             'because of Brexit',
             'while we all sleep',
-            'due to a single snow flake on the line'
+            'due to a single snow flake on the line',
+            'because we cannot be asked'
         ];
 
-        return fakeExcuses[Math.round(Math.random() * 3)];
+        return fakeExcuses[Math.round(Math.random() * 4)];
     }
 }
-
-/*
-Adderley Park
- Alsage
- Apsley
- Atherstone
- Berkhamsted
- Berkswell
- Birmingham International
- Birmingham New Street
- Bletchley
- Bushey
- Canley
- Cheddington
- Coventry
- Crewe
- Hampton-in-Arden
- Harrow & Wealdstone
- Hemel Hempstead
- Kidsgrove
- Kings Langley
- Lea Hall
- Leighton Buzzard
- Lichfield Trent Valley
- London Euston
- Long Buckby
- Marston Green
- Milton Keynes Central
- Northampton
- Nuneaton
- Polesworth
- Rugby
- Rugeley Trent Valley
- Stafford
- Stechford
- Stoke-on-Trent
- Stone
- Tamworth
- Tile Hill
- Tring
- Watford Junction
- Wembley Central
- Wolverton
-Watford Junction
-*/

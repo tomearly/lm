@@ -1,14 +1,26 @@
+
 <ol class="breadcrumb">
   <li class="active">Train Announcements</li>
 </ol>
 <header>
   <h2>Any coincidence to any train operator is coincidental and this site is purely for entertainment</h2>
 </header>
+
+  <button (click)="refresh($event)" class='btn btn-primary'>Generate new excuse</button>
+
+  <div class="well">
+      <input [(ngModel)]="apology">
+      <input [(ngModel)]="operator">
+      <input [(ngModel)]="destination">
+      <input [(ngModel)]="mainReason">
+      <input [(ngModel)]="fakeReason">
+  </div>
+
 <div class="jumbotron">
     <h3>{{apology}} that the {{date | date:'shortTime'}} {{operator}}</h3>
     <h3>service to {{destination}}</h3>
     <h3>{{mainReason}}</h3>
     <h3>{{fakeReason}}</h3>
-
+    <br>              
     <h2>{{operator}} @ {{date | date:'shortTime'}}</h2>
 </div>

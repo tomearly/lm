@@ -18,6 +18,15 @@ export class Home {
         this.fakeReason = this.service.getRandomFakeExcuse();
     }
 
+    refresh() {
+        this.apology = this.service.getRandomApology();
+        this.date = new Date();
+        this.operator = this.service.getRandomOperator();
+        this.mainReason = this.service.getRandomMainExcuse();
+        this.destination = this.service.getRandomDestination();
+        this.fakeReason = this.service.getRandomFakeExcuse();
+    }
+
     ngOnInit() {
         console.log('[Component] home ngOnInit');
     }
