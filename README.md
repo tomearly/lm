@@ -9,13 +9,8 @@
 * Components
     * App (app scaffolding)
     * Home (homepage)
-    * Navbar (menu)
-    * GithubUser (list/item demonstration)
-    * HttpModule (Http call)
-    * Google Map
-    * About (Info about this project)
 
-## Preriquisites
+## Prerequisites
 
 * NodeJS (recommended: 4.1.x)
 * NPM (recommended: 3.3.x `sudo npm install -g npm`)
