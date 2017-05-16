@@ -9,10 +9,10 @@ export default class DataTypeService {
 
     getRandomApology() {
         var apology = [
-            'We could not give a fig',
-            'We really, really care',
-            'We do not apologize at all',
-            'We are sooooo lame'
+            'We apologize that the',
+            'We care a great deal that',
+            'We have no idea why the',
+            'We are deeply sorry that the'
         ];
 
         return apology[Math.round(Math.random() * 3)];
@@ -69,11 +69,11 @@ export default class DataTypeService {
 
     getRandomFakeExcuse() {
         var fakeExcuses = [
-            'due to a large slurry of pig dung',
-            'because of Brexit',
-            'while we all sleep',
-            'due to a single snow flake on the line',
-            'because we cannot be asked'
+            'due to the wrong type of leaves on the line.',
+            'due to a broken down train.',
+            'because of a cow on the line.',
+            'due to a single snow flake on the line.',
+            'due to a UFO in the area.'
         ];
 
         return fakeExcuses[Math.round(Math.random() * 4)];
