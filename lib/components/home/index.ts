@@ -9,6 +9,13 @@ import DataTypeService from './service';
 })
 export class Home {
 
+    apology: string;
+    date: Date;
+    operator: string;
+    mainReason: string;
+    destination: string;
+    fakeReason: string;
+
     constructor(public service:DataTypeService) {
         this.apology = this.service.getRandomApology();
         this.date = new Date();
