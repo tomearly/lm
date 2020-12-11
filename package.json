@@ -37,7 +37,7 @@
     "path": "0.4.10",
     "raw-loader": "0.5.1",
     "sass-loader": "3.2.3",
-    "style-loader": "0.13.2",
+    "style-loader": "2.0.0",
     "ts-loader": "0.6.1",
     "typescript": "1.7.3",
     "util": "0.10.4",
